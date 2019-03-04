@@ -163,7 +163,30 @@ span.psw {
             <img src="DunmanHighSchoolCrest.png" alt="logo">
         </div>
 	</div>
-	<div class= "signup">
+	
+	<button onclick="document.getElementById('id01').style.display='block'" style="width:80px; position: absolute; right: 12%; top: 10%;">Login</button>
+	<div id="id01" class="modal">
+  
+		<form class="modal-content animate" action="/action_page.php">
+
+			<div class="container">
+				<label for="uname"><b>Username</b></label>
+				<input type="text" placeholder="Enter Username" name="uname" required>
+
+				<label for="psw"><b>Password</b></label>	
+				<input type="password" placeholder="Enter Password" name="psw" required>
+        
+				<button type="submit"><a href = "PTM_index.html">Login</a></button>
+			<label>
+				<input type="checkbox" checked="checked" name="remember"> Remember me
+			</label>
+			</div>
+
+			<div class="container" style="background-color:#f1f1f1">
+				<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+			<span class="psw">Forgot <a href="#">password?</a></span>
+			</div>
+			<div class= "signup">
 		<meta name="google-signin-client_id" content="485699318448-c12570mim9u4aabsi91m3vg8hn771tjc.apps.googleusercontent.com">
 	
 	
@@ -189,28 +212,6 @@ span.psw {
   </script>
 	<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
 </div>
-	<button onclick="document.getElementById('id01').style.display='block'" style="width:80px; position: absolute; right: 12%; top: 10%;">Login</button>
-	<div id="id01" class="modal">
-  
-		<form class="modal-content animate" action="/action_page.php">
-
-			<div class="container">
-				<label for="uname"><b>Username</b></label>
-				<input type="text" placeholder="Enter Username" name="uname" required>
-
-				<label for="psw"><b>Password</b></label>	
-				<input type="password" placeholder="Enter Password" name="psw" required>
-        
-				<button type="submit"><a href = "PTM_index.html">Login</a></button>
-			<label>
-				<input type="checkbox" checked="checked" name="remember"> Remember me
-			</label>
-			</div>
-
-			<div class="container" style="background-color:#f1f1f1">
-				<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-			<span class="psw">Forgot <a href="#">password?</a></span>
-			</div>
 		</form>
 	</div>
 	<div class="text">
