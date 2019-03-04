@@ -64,4 +64,10 @@ ul li.active a{
 	margin: auto;
 }
 
-
+.text{
+	position: absolute;
+	background-color: FF6A4A;
+	top: 40%;
+	left: 10%;
+	font-size: 30px;
+}
